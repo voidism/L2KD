@@ -1,13 +1,12 @@
 # Lifelong Language Knowledge Distillation
 
-Code for the paper "Lifelong Language Knowledge Distillation"
+Code for the paper "Lifelong Language Knowledge Distillation"  
 [Yung-Sung Chuang](https://voidism.github.io/home/), [Shang-Yu Su](https://www.shangyusu.com/), and [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)  
 In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)
 
 Our code is largely based on the released code from [LAnguage-MOdeling-for-Lifelong-Language-Learning](https://github.com/jojotenya/LAMOL). Most of the settings are identical to theirs.
 
 ## Dataset
-
 
 | Task | Dataset (Original Data Link) |
 | ---- | ------- |
@@ -79,6 +78,6 @@ If you want to conduct Seq-KD, skip `--distil` in the arguments.
 
 #### Outputs:
 
-_We add $SEED suffix to the model dir_
+_We add $SEED suffix to the model dir_  
 If assigning multitask to `--seq_train_type` tag, the model will be dumped in `$MODEL_ROOT_DIR / model_name / seq_train_type /TASK1_TASK2_...` directory. Otherwise, it will be in `$MODEL_ROOT_DIR / model_name / seq_train_type / TASK1_TASK2_... / TASK1`, `$MODEL_ROOT_DIR / model_name / seq_train_type / TASK1_TASK2_... / TASK2`, ... directories. 
 
