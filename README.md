@@ -1,10 +1,10 @@
 # Lifelong Language Knowledge Distillation
 
 Code for the paper "Lifelong Language Knowledge Distillation"  
-[Yung-Sung Chuang](https://voidism.github.io/home/), [Shang-Yu Su](https://www.shangyusu.com/), and [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)  
-In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)
+In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)  
+by [Yung-Sung Chuang](https://voidism.github.io/home/), [Shang-Yu Su](https://www.shangyusu.com/), [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)  
 
-Our code is largely based on the released code from [LAnguage-MOdeling-for-Lifelong-Language-Learning](https://github.com/jojotenya/LAMOL). Most of the settings are identical to theirs.
+Our code is based on the released code from [LAnguage-MOdeling-for-Lifelong-Language-Learning](https://github.com/jojotenya/LAMOL). Most of the settings are identical to theirs.
 
 ## Dataset
 
