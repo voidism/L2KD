@@ -1,6 +1,6 @@
 # Lifelong Language Knowledge Distillation
 
-Code for the paper "Lifelong Language Knowledge Distillation"  
+Code for the paper "[Lifelong Language Knowledge Distillation](https://arxiv.org/abs/2010.02123)"  
 In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)  
 by [Yung-Sung Chuang](https://voidism.github.io/home/), [Shang-Yu Su](https://www.shangyusu.com/), [Yun-Nung Chen](https://www.csie.ntu.edu.tw/~yvchen/index.html)  
 
