@@ -1,4 +1,4 @@
-# Lifelong Language Knowledge Distillation
+# Lifelong Language Knowledge Distillation 🙋‍♂️🙋‍♀️ → 🏫 → 👨‍🎓👩‍🎓
 
 Code for the paper "[Lifelong Language Knowledge Distillation](https://arxiv.org/abs/2010.02123)"  
 In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)  
@@ -6,7 +6,7 @@ by [Yung-Sung Chuang](https://voidism.github.io/home/), [Shang-Yu Su](https://ww
 
 Our code is based on the released code from [LAnguage-MOdeling-for-Lifelong-Language-Learning](https://github.com/jojotenya/LAMOL). Most of the settings are identical to theirs.
 
-## Dataset
+## 📚 Dataset
 
 | Task | Dataset (Original Data Link) |
 | ---- | ------- |
@@ -21,7 +21,7 @@ We use the released data from LAMOL's authors [here](https://drive.google.com/fi
 
 We also release our processed data in [here](https://www.dropbox.com/s/t51qq9lzz0gtg7m/l2kd_data.zip).
 
-## Dependencies (same as LAMOL)
+## 💻 Dependencies (same as LAMOL)
 - Ubuntu >= 16.04
 - This code only supports the following GPUs:
   - NVIDIA Geforce RTX 2080TI 
@@ -30,14 +30,14 @@ We also release our processed data in [here](https://www.dropbox.com/s/t51qq9lzz
 - cuda 10.1
 - python packages are listed in `requirements.txt`
 
-## Setup (same as LAMOL)
+## 🔧 Setup (same as LAMOL)
 1. Create the following two directories in wherever you want. (you can name the directories arbitrarily):
     - `data directory`: Where the dataset will be load by the model.
     - `model directory`: The place for the model to dump its outputs.
 2. Download the dataset: Download [here](https://www.dropbox.com/s/t51qq9lzz0gtg7m/l2kd_data.zip) and decompress it. After decompression, move all the files in the decompressed directory into `data directory`.
 3. Make a copy of `env.example` and save it as `env`. In `env`, set the value of DATA_DIR as `data directory` and set the value of  MODEL_ROOT_DIR as `model directory`.
 
-## Training and Testing (same as LAMOL)
+## 👨‍🏫 👩‍🏫 Training and Testing (same as LAMOL)
 
 `train.sh` and `test.sh` are the entrance for training and testing. Main options for them include:
 
@@ -58,7 +58,7 @@ We also release our processed data in [here](https://www.dropbox.com/s/t51qq9lzz
 | top_k_qa       | Top k sampling for the qa model. |
 | train_batch_size | Batch size for all tasks. The default is 0. Once the value equals to 0, The batch size will be decided dynamically based on the memory usage of the gpu. |
 
-### New Arguments
+### 🚨 New Arguments
 
 | Options        | Description   |
 | -------------  | ------------- |
@@ -81,10 +81,28 @@ If you want to conduct Seq-KD, skip `--distil` in the arguments.
 _We add $SEED suffix to the model dir_  
 If assigning multitask to `--seq_train_type` tag, the model will be dumped in `$MODEL_ROOT_DIR / model_name / seq_train_type /TASK1_TASK2_...` directory. Otherwise, it will be in `$MODEL_ROOT_DIR / model_name / seq_train_type / TASK1_TASK2_... / TASK1`, `$MODEL_ROOT_DIR / model_name / seq_train_type / TASK1_TASK2_... / TASK2`, ... directories. 
 
-## Acknowledgements:
+## 📝 Acknowledgements:
 - We adapted the open source code of [LAMOL](https://github.com/jojotenya/LAMOL) provided by Cheng-Hao Ho and Fan-Keng Sun.
 - We use the language model offered by [transformers](https://github.com/huggingface/transformers), a state-of-the-art natural language processing models library by Thomas Wolf et al.
 - The implementation of MAS follows [MAS-Memory-Aware-Synapses](https://github.com/rahafaljundi/MAS-Memory-Aware-Synapses), the Memory Aware Synapses method implementation code by Aljundi R. et al.
 - The implementation of GEM follows [GradientEpisodicMemory](https://github.com/facebookresearch/GradientEpisodicMemory), the Gradient Episodic Memory method implementation code by Lopez-Paz, David et al.
 - The implementation of fp16 (`fp16.py`, `fp16util.py`) is from [Megatron-LM](https://github.com/NVIDIA/Megatron-LM), the ongoing research training transformer language models at scale by NVIDIA.
 - Data format conversion refer to [decaNLP](https://github.com/salesforce/decaNLP), the Natural Language Decathlon: Multitask Learning as Question Answering implementation code by Bryan McCann et al.
+
+## 📕 Citation
+
+```
+@article{chuang2020lifelong,
+  title={Lifelong Language Knowledge Distillation},
+  author={Chuang, Yung-Sung and Su, Shang-Yu and Chen, Yun-Nung},
+  journal={arXiv preprint arXiv:2010.02123},
+  year={2020}
+}
+
+@inproceedings{sun2019lamol,
+  title={LAMOL: LAnguage MOdeling for Lifelong Language Learning},
+  author={Sun, Fan-Keng and Ho, Cheng-Hao and Lee, Hung-Yi},
+  booktitle={International Conference on Learning Representations},
+  year={2019}
+}
+```
