@@ -1,4 +1,4 @@
-# Lifelong Language Knowledge Distillation 🙋‍♂️🙋‍♀️ → 🏫 → 👨‍🎓👩‍🎓
+# Lifelong Language Knowledge Distillation 🙋‍♂️ → 🏫 → 👨‍🎓
 
 Code for the paper "[Lifelong Language Knowledge Distillation](https://arxiv.org/abs/2010.02123)"  
 In The 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP 2020)  
@@ -37,7 +37,7 @@ We also release our processed data in [here](https://www.dropbox.com/s/t51qq9lzz
 2. Download the dataset: Download [here](https://www.dropbox.com/s/t51qq9lzz0gtg7m/l2kd_data.zip) and decompress it. After decompression, move all the files in the decompressed directory into `data directory`.
 3. Make a copy of `env.example` and save it as `env`. In `env`, set the value of DATA_DIR as `data directory` and set the value of  MODEL_ROOT_DIR as `model directory`.
 
-## 👨‍🏫 👩‍🏫 Training and Testing (same as LAMOL)
+## 👨‍🏫 Training and Testing (same as LAMOL)
 
 `train.sh` and `test.sh` are the entrance for training and testing. Main options for them include:
 
